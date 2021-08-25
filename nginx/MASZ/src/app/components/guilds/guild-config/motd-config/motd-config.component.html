@@ -8,6 +8,7 @@
             Enable MotD
         </mat-checkbox>
         <ng-container *ngIf="this.motd.content.motd.showMotd">
+            <p class="card-text">This message will be displayed to your administrators and moderators on the guild dashboard.</p>
             <mat-form-field class="mb-2">
                 <mat-label>Message</mat-label>
                 <textarea matInput placeholder="Important message to my administrators." [(ngModel)]="this.motd.content.motd.message" (ngModelChange)="onChange($event)"></textarea>
